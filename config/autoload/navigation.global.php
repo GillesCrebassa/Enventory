@@ -11,7 +11,7 @@ return array(
             array(
             'label' => 'User',
             'route' => 'zfcuser/login',
-            'icon' => 'glyphicon glyphicon-home'
+            'icon' => 'glyphicon glyphicon-user'
             ),
         ),
     ),
