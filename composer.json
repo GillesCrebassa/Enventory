@@ -11,7 +11,8 @@
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.2.*",
 	"zf-commons/zfc-base": "0.1.2",
-	"zf-commons/zfc-user": "dev-master"
+	"zf-commons/zfc-user": "dev-master",
+	"fabiopaiva/zf2-navigation-bootstrap3" : "master"
 	
 
     }
