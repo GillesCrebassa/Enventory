@@ -4,16 +4,17 @@
     "license": "BSD-3-Clause",
     "keywords": [
         "framework",
-        "zf2"
+        "zf2",
+	"Enventory",
+	"Inventory",
+	"Environment"
+
     ],
-    "homepage": "http://framework.zend.com/",
+    "homepage": "https://github.com/GillesCrebassa/Enventory",
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.2.*",
 	"zf-commons/zfc-base": "0.1.2",
-	"zf-commons/zfc-user": "dev-master",
-	"fabiopaiva/zf2-navigation-bootstrap3" : "master"
-	
-
+	"zf-commons/zfc-user": "dev-master"
     }
 }

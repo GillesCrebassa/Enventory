@@ -18,10 +18,13 @@
 
 // Composer autoloading
 if (file_exists('vendor/autoload.php')) {
+echo "file vendor/autoload.php exist";
     $loader = include 'vendor/autoload.php';
 }
-
-$zf2Path = false;
+else
+{
+echo "file vendor/autoload.php not exist";
+}
 
 if (is_dir('vendor/ZF2/library')) {
     $zf2Path = 'vendor/ZF2/library';
@@ -31,6 +34,7 @@ if (is_dir('vendor/ZF2/library')) {
     $zf2Path = get_cfg_var('zf2_path');
 }
 
+echo $loader;
 if ($zf2Path) {
     if (isset($loader)) {
         $loader->add('Zend', $zf2Path);
