@@ -13,6 +13,18 @@ return array(
             'route' => 'zfcuser/login',
             'icon' => 'glyphicon glyphicon-user'
             ),
+            array(
+            'label' => 'Env',
+            'route' => 'environment',
+            'icon' => 'environment.gif'
+            ),
+/*
+            array(
+            'label' => 'Param',
+            'route' => 'parameter/list',
+            'icon' => 'parameter.gif'
+            ),
+*/
         ),
     ),
 );
