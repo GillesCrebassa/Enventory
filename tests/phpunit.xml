@@ -1,0 +1,20 @@
+<phpunit bootstrap="Bootstrap.php" backupGlobals="false">
+    <testsuites>
+        <testsuite name="application">
+            <directory>../module/Application</directory>
+        </testsuite>
+<!--
+        <testsuite name="anothermodule">
+            <directory>../module/AnotherModule</directory>
+        </testsuite>
+-->        
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../module</directory>
+            <exclude>
+                <directory suffix=".php">../module/*/tests</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>
