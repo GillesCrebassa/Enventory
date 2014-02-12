@@ -17,7 +17,6 @@
 	"zf-commons/zfc-base": "0.1.2",
 	"zf-commons/zfc-user": "dev-master",
 	"thadafinser/zfc-datagrid": "dev-master",
-	"acelaya/zf2-acmailer": "dev-master",
-	"league/shunt": "~2.0"
+	"acelaya/zf2-acmailer": "dev-master"
     }
 }
