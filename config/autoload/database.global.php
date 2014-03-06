@@ -1,14 +1,19 @@
  <?php
 // remove this line in local
-if (!empty(getenv('OPENSHIFT_GEAR_NAME')))
+
+//if (!empty(getenv('OPENSHIFT_GEAR_NAME')))
+$gear_name=getenv('OPENSHIFT_GEAR_NAME');
+if (!empty($gear_name))
 {
+
         $dbParams = array(
             'database'  => getenv('OPENSHIFT_GEAR_NAME'),
             'username'  => getenv('OPENSHIFT_MYSQL_DB_USER'),
             'password'  => getenv('OPENSHIFT_MYSQL_DB_PASS'),
             'hostname'  => getenv('OPENSHIFT_MYSQL_DB_HOST'),
-            'port'  => getenv('OPENSHIFT_MYSQL_DB_PORT'),
+            'port'  => getenv('OPENSHIFT_MYSQL_DB_PORT')
         );
+
 
 }
 else
@@ -21,7 +26,8 @@ else
             //'port'  => getenv('DB_PORT'),
             'port'  	=> '3306',
         );
-);
+};
+
         return array(
             'service_manager' => array(
                 'factories' => array(
@@ -39,6 +45,5 @@ else
                 ),
             ),
         );
-}
 
 
