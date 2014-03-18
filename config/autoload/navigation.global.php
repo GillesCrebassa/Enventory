@@ -18,13 +18,11 @@ return array(
             'route' => 'environment',
             'icon' => 'environment.gif'
             ),
-/*
             array(
-            'label' => 'Param',
-            'route' => 'parameter/list',
-            'icon' => 'parameter.gif'
+            'label' => 'Target',
+            'route' => 'target',
+            'icon' => 'target.gif'
             ),
-*/
         ),
     ),
 );

@@ -30,6 +30,16 @@ return array(
                     ),
                 ),
             ),
+            'target' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/Target',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Target',
+                        'action'     => 'index',
+                    ),
+                ),
+            ),
             // The following is a route to simplify getting started creating
             // new controllers and actions without needing to create a new
             // module. Simply drop new controllers in, and you can access them
@@ -84,7 +94,8 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
-            'Application\Controller\Env' => 'Application\Controller\EnvController'
+            'Application\Controller\Env' => 'Application\Controller\EnvController',
+            'Application\Controller\Target' => 'Application\Controller\TargetController'
         ),
     ),
     'view_manager' => array(
