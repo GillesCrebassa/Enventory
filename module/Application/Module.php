@@ -16,6 +16,18 @@ class Module
 {
     public function onBootstrap(MvcEvent $e)
     {
+
+	$app         = $e->getParam('application');
+        $config      = $app->getConfig();
+        $phpSettings = $config['phpSettings'];
+        if($phpSettings) {
+            foreach($phpSettings as $key => $value) {
+                ini_set($key, $value);
+            }
+        }
+
+
+
         $eventManager        = $e->getApplication()->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);

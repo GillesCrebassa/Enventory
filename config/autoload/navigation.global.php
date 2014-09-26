@@ -18,13 +18,11 @@ return array(
             'route' => 'environment',
             'icon' => 'environment.gif'
             ),
-/*
             array(
-            'label' => 'Param',
-            'route' => 'parameter/list',
-            'icon' => 'parameter.gif'
+            'label' => 'Target',
+            'route' => 'target',
+            'icon' => 'target.gif'
             ),
-*/
             array(
             'label' => 'SubMenu1',
             'uri' => '#',
@@ -48,8 +46,6 @@ return array(
             'uri' => 'http://be.linkedin.com/in/crebassagilles/',
             'icon' => 'glyphicon glyphicon-info-sign'
             ),
-            
-
         ),
     ),
 );
