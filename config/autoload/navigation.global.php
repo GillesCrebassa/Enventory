@@ -25,6 +25,31 @@ return array(
             'icon' => 'parameter.gif'
             ),
 */
+            array(
+            'label' => 'SubMenu1',
+            'uri' => '#',
+            'pages' => array(
+                array(
+                        'label' => 'Sub1',
+                        'route' => 'home',
+                        'icon' => 'environment.gif'
+                    
+                    ),
+                array(
+                        'label' => 'Sub2',
+                        'route' => 'home',
+                        'icon' => 'environment.gif'
+                    
+                    ),
+                )
+            ),
+            array(
+            'label' => 'Contact',
+            'uri' => 'http://be.linkedin.com/in/crebassagilles/',
+            'icon' => 'glyphicon glyphicon-info-sign'
+            ),
+            
+
         ),
     ),
 );

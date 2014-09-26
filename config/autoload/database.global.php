@@ -23,10 +23,19 @@ else
             'username'  => getenv('DB_USER'),
             'password'  => getenv('DB_PASS'),
             'hostname'  => getenv('DB_HOST'),
-            //'port'  => getenv('DB_PORT'),
+            'port'  => getenv('DB_PORT'),
+        
+/*
+            'database'  => 'c9',
+            'username'  => 'crebassa_gilles',
+            'password'  => getenv('DB_PASS'),
+            'hostname'  => 'localhost',
             'port'  	=> '3306',
+*/            
+            
         );
 };
+
 
         return array(
             'service_manager' => array(
