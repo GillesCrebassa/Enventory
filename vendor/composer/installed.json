@@ -1,21 +1,124 @@
 [
     {
-        "name": "zendframework/zendframework",
-        "version": "2.2.5",
-        "version_normalized": "2.2.5.0",
+        "name": "zf-commons/zfc-base",
+        "version": "v0.1.2",
+        "version_normalized": "0.1.2.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/zendframework/zf2.git",
-            "reference": "4a7cf6a4cf791244e14aa0ca49d1f06916b63202"
+            "url": "https://github.com/ZF-Commons/ZfcBase.git",
+            "reference": "fc68a49b58ba68584a9a4c44a1ca9df12b30d1bf"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/zendframework/zf2/zipball/4a7cf6a4cf791244e14aa0ca49d1f06916b63202",
-            "reference": "4a7cf6a4cf791244e14aa0ca49d1f06916b63202",
+            "url": "https://api.github.com/repos/ZF-Commons/ZfcBase/zipball/fc68a49b58ba68584a9a4c44a1ca9df12b30d1bf",
+            "reference": "fc68a49b58ba68584a9a4c44a1ca9df12b30d1bf",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "zendframework/zend-db": "~2.1",
+            "zendframework/zend-eventmanager": "~2.1",
+            "zendframework/zend-loader": "~2.1",
+            "zendframework/zend-modulemanager": "~2.1",
+            "zendframework/zend-mvc": "~2.1",
+            "zendframework/zend-servicemanager": "~2.1",
+            "zendframework/zend-stdlib": "~2.1"
+        },
+        "time": "2013-05-02 12:33:49",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "ZfcBase": "src/"
+            },
+            "classmap": [
+                "./Module.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Kyle Spraggs",
+                "email": "theman@spiffyjr.me",
+                "homepage": "http://www.spiffyjr.me/"
+            },
+            {
+                "name": "Evan Coury",
+                "email": "me@evancoury.com",
+                "homepage": "http://blog.evan.pro/"
+            }
+        ],
+        "description": "A set of genetic (abstract) classes which are commonly used across multiple modules.",
+        "homepage": "https://github.com/ZF-Commons/ZfcBase",
+        "keywords": [
+            "zf2"
+        ]
+    },
+    {
+        "name": "zendframework/zendxml",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/ZendXml.git",
+            "reference": "559b34f426d33a11c3db118e00ce14bb8dc64e5f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/ZendXml/zipball/559b34f426d33a11c3db118e00ce14bb8dc64e5f",
+            "reference": "559b34f426d33a11c3db118e00ce14bb8dc64e5f",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "fabpot/php-cs-fixer": "*@dev",
+            "phpunit/phpunit": "~3.7"
+        },
+        "time": "2014-03-05 22:25:44",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "ZendXml": "library/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Utility library for XML usage, best practices, and security in PHP",
+        "homepage": "http://packages.zendframework.com/",
+        "keywords": [
+            "security",
+            "xml",
+            "zf2"
+        ]
+    },
+    {
+        "name": "zendframework/zendframework",
+        "version": "2.2.8",
+        "version_normalized": "2.2.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zf2.git",
+            "reference": "f5739702d974f1242ca4101467c58e94cb568294"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zf2/zipball/f5739702d974f1242ca4101467c58e94cb568294",
+            "reference": "f5739702d974f1242ca4101467c58e94cb568294",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "zendframework/zendxml": "~1.0-dev"
         },
         "replace": {
             "zendframework/zend-authentication": "self.version",
@@ -86,7 +189,7 @@
             "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
             "zendframework/zendservice-recaptcha": "ZendService\\ReCaptcha for rendering ReCaptchas in Zend\\Captcha and/or Zend\\Form"
         },
-        "time": "2013-10-31 15:48:16",
+        "time": "2014-09-16 22:41:30",
         "bin": [
             "bin/classmap_generator.php",
             "bin/pluginmap_generator.php",
@@ -117,73 +220,18 @@
         ]
     },
     {
-        "name": "zf-commons/zfc-base",
-        "version": "v0.1.2",
-        "version_normalized": "0.1.2.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/ZF-Commons/ZfcBase.git",
-            "reference": "fc68a49b58ba68584a9a4c44a1ca9df12b30d1bf"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/ZF-Commons/ZfcBase/zipball/fc68a49b58ba68584a9a4c44a1ca9df12b30d1bf",
-            "reference": "fc68a49b58ba68584a9a4c44a1ca9df12b30d1bf",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3",
-            "zendframework/zend-db": "~2.1",
-            "zendframework/zend-eventmanager": "~2.1",
-            "zendframework/zend-loader": "~2.1",
-            "zendframework/zend-modulemanager": "~2.1",
-            "zendframework/zend-mvc": "~2.1",
-            "zendframework/zend-servicemanager": "~2.1",
-            "zendframework/zend-stdlib": "~2.1"
-        },
-        "time": "2013-05-02 12:33:49",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "ZfcBase": "src/"
-            },
-            "classmap": [
-                "./Module.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "authors": [
-            {
-                "name": "Kyle Spraggs",
-                "email": "theman@spiffyjr.me",
-                "homepage": "http://www.spiffyjr.me/"
-            },
-            {
-                "name": "Evan Coury",
-                "email": "me@evancoury.com",
-                "homepage": "http://blog.evan.pro/"
-            }
-        ],
-        "description": "A set of genetic (abstract) classes which are commonly used across multiple modules.",
-        "homepage": "https://github.com/ZF-Commons/ZfcBase",
-        "keywords": [
-            "zf2"
-        ]
-    },
-    {
         "name": "zf-commons/zfc-user",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/ZF-Commons/ZfcUser.git",
-            "reference": "c5d6fe51643b8d774ac930389793ea629b3cce70"
+            "reference": "0fa1bbaae8a6a2ec1bfb4d8a83cb8b898f6ffa02"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ZF-Commons/ZfcUser/zipball/c5d6fe51643b8d774ac930389793ea629b3cce70",
-            "reference": "c5d6fe51643b8d774ac930389793ea629b3cce70",
+            "url": "https://api.github.com/repos/ZF-Commons/ZfcUser/zipball/0fa1bbaae8a6a2ec1bfb4d8a83cb8b898f6ffa02",
+            "reference": "0fa1bbaae8a6a2ec1bfb4d8a83cb8b898f6ffa02",
             "shasum": ""
         },
         "require": {
@@ -191,24 +239,27 @@
             "zendframework/zend-authentication": "~2.1",
             "zendframework/zend-crypt": "~2.1",
             "zendframework/zend-form": "~2.1",
+            "zendframework/zend-http": "~2.1",
             "zendframework/zend-inputfilter": "~2.1",
             "zendframework/zend-loader": "~2.1",
             "zendframework/zend-modulemanager": "~2.1",
             "zendframework/zend-mvc": "~2.1",
             "zendframework/zend-servicemanager": "~2.1",
+            "zendframework/zend-session": "~2.1",
             "zendframework/zend-stdlib": "~2.1",
             "zendframework/zend-validator": "~2.1",
             "zendframework/zend-view": "~2.1",
-            "zf-commons/zfc-base": "0.*"
+            "zf-commons/zfc-base": "~0.1.0"
         },
-        "suggest": {
-            "zendframework/zend-session": "To use the default authentication adapter."
+        "require-dev": {
+            "phpunit/phpunit": ">=3.7,<4",
+            "squizlabs/php_codesniffer": "1.4.*"
         },
-        "time": "2014-01-14 16:59:51",
+        "time": "2014-12-12 11:51:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "0.1.x-dev"
+                "dev-master": "2.0.x-dev"
             }
         },
         "installation-source": "source",
@@ -221,6 +272,9 @@
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
         "authors": [
             {
                 "name": "Kyle Spraggs",
@@ -231,11 +285,17 @@
                 "name": "Evan Coury",
                 "email": "me@evancoury.com",
                 "homepage": "http://blog.evan.pro/"
+            },
+            {
+                "name": "Daniel Strøm",
+                "email": "ds@eye4web.dk",
+                "homepage": "http://eye4web.dk/"
             }
         ],
-        "description": "A generic user registration and authentication module for ZF2. Supports Zend\\Db and Doctrine2.",
+        "description": "A generic user registration and authentication module for ZF2. Supports multiple adapters with built-in support for Zend\\Db.",
         "homepage": "https://github.com/ZF-Commons/ZfcUser",
         "keywords": [
+            "Authentication",
             "zf2"
         ]
     },
@@ -246,37 +306,38 @@
         "source": {
             "type": "git",
             "url": "https://github.com/ThaDafinser/ZfcDatagrid.git",
-            "reference": "0cc5a0f9d0012db8f8cc51bd792292db6af46dda"
+            "reference": "264d10c3cfd1eabfe10c669a9a38893191818044"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ThaDafinser/ZfcDatagrid/zipball/0cc5a0f9d0012db8f8cc51bd792292db6af46dda",
-            "reference": "0cc5a0f9d0012db8f8cc51bd792292db6af46dda",
+            "url": "https://api.github.com/repos/ThaDafinser/ZfcDatagrid/zipball/264d10c3cfd1eabfe10c669a9a38893191818044",
+            "reference": "264d10c3cfd1eabfe10c669a9a38893191818044",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.3",
-            "zendframework/zend-cache": ">=2.1",
-            "zendframework/zend-http": ">=2.1",
-            "zendframework/zend-modulemanager": ">=2.1",
-            "zendframework/zend-mvc": ">=2.1",
-            "zendframework/zend-paginator": ">=2.1",
-            "zendframework/zend-session": ">=2.1",
-            "zendframework/zend-view": ">=2.1"
+            "php": ">=5.3.23",
+            "zendframework/zend-cache": "~2.2",
+            "zendframework/zend-http": "~2.2",
+            "zendframework/zend-modulemanager": "~2.2",
+            "zendframework/zend-mvc": "~2.2",
+            "zendframework/zend-paginator": "~2.2",
+            "zendframework/zend-session": "~2.2",
+            "zendframework/zend-view": "~2.2"
         },
         "require-dev": {
             "doctrine/doctrine-orm-module": ">=0.8",
-            "phpunit/phpunit": "3.7.*",
+            "fabpot/php-cs-fixer": "*@dev",
+            "phpunit/phpunit": "~3.7",
             "satooshi/php-coveralls": "dev-master",
-            "zendframework/zendframework": ">=2.2"
+            "zendframework/zendframework": "~2.2"
         },
         "suggest": {
             "codeplex/phpexcel": "~1.7",
             "doctrine/doctrine-orm-module": ">=0.8",
             "ext-intl": "*",
-            "tecnick.com/tcpdf": ">=6.0"
+            "tecnick.com/tcpdf": "~6.0"
         },
-        "time": "2014-02-03 12:32:38",
+        "time": "2014-11-06 13:21:16",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -312,28 +373,38 @@
         "source": {
             "type": "git",
             "url": "https://github.com/acelaya/ZF2-AcMailer.git",
-            "reference": "11378f0e7727eb9fe5bbf2e74e3e16f14715c44c"
+            "reference": "0c36ff163766bbd85f6e7fcb4f055f2d8e8a442e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/acelaya/ZF2-AcMailer/zipball/11378f0e7727eb9fe5bbf2e74e3e16f14715c44c",
-            "reference": "11378f0e7727eb9fe5bbf2e74e3e16f14715c44c",
+            "url": "https://api.github.com/repos/acelaya/ZF2-AcMailer/zipball/0c36ff163766bbd85f6e7fcb4f055f2d8e8a442e",
+            "reference": "0c36ff163766bbd85f6e7fcb4f055f2d8e8a442e",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.0",
-            "zendframework/zendframework": ">=2.2.2"
+            "php": ">=5.3.23",
+            "zendframework/zend-eventmanager": "~2.2",
+            "zendframework/zend-loader": "~2.2",
+            "zendframework/zend-mail": "~2.2",
+            "zendframework/zend-mime": "~2.2",
+            "zendframework/zend-modulemanager": "~2.2",
+            "zendframework/zend-mvc": "~2.2",
+            "zendframework/zend-servicemanager": "~2.2",
+            "zendframework/zend-stdlib": "~2.2",
+            "zendframework/zend-view": "~2.2"
         },
-        "time": "2014-02-02 08:18:06",
+        "require-dev": {
+            "phpunit/phpunit": "~4.0",
+            "squizlabs/php_codesniffer": "~1.0",
+            "zendframework/zendframework": "~2.2"
+        },
+        "time": "2014-11-12 20:46:56",
         "type": "library",
         "installation-source": "source",
         "autoload": {
-            "psr-0": {
-                "AcMailer": "src/"
-            },
-            "classmap": [
-                "./Module.php"
-            ]
+            "psr-4": {
+                "AcMailer\\": "src/"
+            }
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
@@ -351,8 +422,10 @@
         "homepage": "https://github.com/acelaya/ZF2-AcMailer",
         "keywords": [
             "mail",
+            "module",
             "php",
-            "zend"
+            "zend",
+            "zf2"
         ]
     }
 ]

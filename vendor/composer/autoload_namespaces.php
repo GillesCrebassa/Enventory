@@ -11,5 +11,5 @@ return array(
     'ZfcDatagridTest\\' => array($vendorDir . '/thadafinser/zfc-datagrid/tests'),
     'ZfcBase' => array($vendorDir . '/zf-commons/zfc-base/src'),
     'Zend\\' => array($vendorDir . '/zendframework/zendframework/library'),
-    'AcMailer' => array($vendorDir . '/acelaya/zf2-acmailer/src'),
+    'ZendXml' => array($vendorDir . '/zendframework/zendxml/library'),
 );

@@ -6,7 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'AcMailer\\Module' => $vendorDir . '/acelaya/zf2-acmailer/Module.php',
     'ZfcBase\\Module' => $vendorDir . '/zf-commons/zfc-base/Module.php',
     'ZfcUser\\Module' => $vendorDir . '/zf-commons/zfc-user/Module.php',
 );
