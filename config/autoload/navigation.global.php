@@ -18,13 +18,34 @@ return array(
             'route' => 'environment',
             'icon' => 'environment.gif'
             ),
-/*
             array(
-            'label' => 'Param',
-            'route' => 'parameter/list',
-            'icon' => 'parameter.gif'
+            'label' => 'Target',
+            'route' => 'target',
+            'icon' => 'target.gif'
             ),
-*/
+            array(
+            'label' => 'SubMenu1',
+            'uri' => '#',
+            'pages' => array(
+                array(
+                        'label' => 'Sub1',
+                        'route' => 'home',
+                        'icon' => 'environment.gif'
+                    
+                    ),
+                array(
+                        'label' => 'Sub2',
+                        'route' => 'home',
+                        'icon' => 'environment.gif'
+                    
+                    ),
+                )
+            ),
+            array(
+            'label' => 'Contact',
+            'uri' => 'http://be.linkedin.com/in/crebassagilles/',
+            'icon' => 'glyphicon glyphicon-info-sign'
+            ),
         ),
     ),
 );
