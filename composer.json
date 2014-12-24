@@ -17,6 +17,8 @@
 	"zf-commons/zfc-base": "0.1.2",
 	"zf-commons/zfc-user": "dev-master",
 	"thadafinser/zfc-datagrid": "dev-master",
-	"acelaya/zf2-acmailer": "dev-master"
+	"acelaya/zf2-acmailer": "dev-master",
+        "nitecon/zf2-ldap-auth": "1.*",
+	"snapshotpl/zf-snap-php-debug-bar": "dev-master"
     }
 }

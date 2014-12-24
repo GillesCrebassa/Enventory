@@ -14,10 +14,3 @@ RewriteRule ^.*$ - [NC,L]
 RewriteCond %{REQUEST_URI}::$1 ^(/.+)(.+)::\2$
 RewriteRule ^(.*) - [E=BASE:%1]
 RewriteRule ^(.*)$ %{ENV:BASE}index.php [NC,L]
-
-SetEnv APPLICATION_ENVIRONMENT development
-SetEnv database c9
-SetEnv username crebassa_gilles
-SetEnv password 
-SetEnv hostname localhost
-SetEnv port 3306
