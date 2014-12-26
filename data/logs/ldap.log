@@ -877,3 +877,13 @@
   2 => 'host=wbrusdc01.has.be.soprabanking,useStartTls=,bindRequiresDn=,accountDomainName=has.be.soprabanking,accountDomainNameShort=EMEAAD,accountCanonicalForm=3,baseDn=DC=emea,DC=msad,DC=sopra',
   3 => 'gcrebassa authentication failed: 0x31 (Invalid credentials; 80090308: LdapErr: DSID-0C0903A9, comment: AcceptSecurityContext error, data 52e, v1db1): EMEAAD\\gcrebassa',
 )
+2014-12-26T15:53:35+01:00 NOTICE (5): Attempting bind with ldap
+2014-12-26T15:53:35+01:00 NOTICE (5): Bind successful setting active server.
+2014-12-26T15:53:35+01:00 NOTICE (5): Attempting to authenticate gcrebassa
+2014-12-26T15:53:35+01:00 NOTICE (5): gcrebassa logged in successfully!
+2014-12-26T15:53:35+01:00 NOTICE (5): Attempting bind with ldap
+2014-12-26T15:53:35+01:00 NOTICE (5): Bind successful setting active server.
+2014-12-26T15:53:35+01:00 NOTICE (5): Attempting to get username entry: uid=gcrebassa,DC=emea,DC=msad,DC=sopra against the active ldap server
+2014-12-26T15:53:35+01:00 DEBUG (7): Raw Ldap Object: 'uid=gcrebassa,DC=emea,DC=msad,DC=sopra'
+2014-12-26T15:53:35+01:00 DEBUG (7): Raw Ldap Object: NULL
+2014-12-26T15:53:35+01:00 NOTICE (5): Username entry lookup response: NULL
