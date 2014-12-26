@@ -221,17 +221,17 @@
     },
     {
         "name": "zf-commons/zfc-user",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "0.1.3",
+        "version_normalized": "0.1.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/ZF-Commons/ZfcUser.git",
-            "reference": "0fa1bbaae8a6a2ec1bfb4d8a83cb8b898f6ffa02"
+            "reference": "db5b39df5f640c86299c74f46a91869c09c9a3ed"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ZF-Commons/ZfcUser/zipball/0fa1bbaae8a6a2ec1bfb4d8a83cb8b898f6ffa02",
-            "reference": "0fa1bbaae8a6a2ec1bfb4d8a83cb8b898f6ffa02",
+            "url": "https://api.github.com/repos/ZF-Commons/ZfcUser/zipball/db5b39df5f640c86299c74f46a91869c09c9a3ed",
+            "reference": "db5b39df5f640c86299c74f46a91869c09c9a3ed",
             "shasum": ""
         },
         "require": {
@@ -249,20 +249,25 @@
             "zendframework/zend-stdlib": "~2.1",
             "zendframework/zend-validator": "~2.1",
             "zendframework/zend-view": "~2.1",
-            "zf-commons/zfc-base": "~0.1.0"
+            "zf-commons/zfc-base": "0.*"
         },
         "require-dev": {
+            "phpmd/phpmd": "1.4.*",
             "phpunit/phpunit": ">=3.7,<4",
-            "squizlabs/php_codesniffer": "1.4.*"
+            "squizlabs/php_codesniffer": "1.4.*",
+            "zendframework/zend-captcha": "~2.1"
         },
-        "time": "2014-12-12 11:51:00",
+        "suggest": {
+            "zendframework/zend-captcha": "Zend\\Captcha if you want to use the captcha component"
+        },
+        "time": "2014-04-17 10:31:44",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.0.x-dev"
+                "dev-master": "0.1.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "ZfcUser": "src/"
@@ -285,18 +290,67 @@
                 "name": "Evan Coury",
                 "email": "me@evancoury.com",
                 "homepage": "http://blog.evan.pro/"
-            },
-            {
-                "name": "Daniel Strøm",
-                "email": "ds@eye4web.dk",
-                "homepage": "http://eye4web.dk/"
             }
         ],
-        "description": "A generic user registration and authentication module for ZF2. Supports multiple adapters with built-in support for Zend\\Db.",
+        "description": "A generic user registration and authentication module for ZF2. Supports Zend\\Db and Doctrine2.",
         "homepage": "https://github.com/ZF-Commons/ZfcUser",
         "keywords": [
-            "Authentication",
             "zf2"
+        ]
+    },
+    {
+        "name": "nitecon/zfcuser-ldap",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Nitecon/zfcuser-ldap.git",
+            "reference": "4b611e93783d76096648cdc76a08e45d477cb2fb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Nitecon/zfcuser-ldap/zipball/4b611e93783d76096648cdc76a08e45d477cb2fb",
+            "reference": "4b611e93783d76096648cdc76a08e45d477cb2fb",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "zendframework/zendframework": "2.*",
+            "zf-commons/zfc-user": "0.1.*"
+        },
+        "require-dev": {
+            "satooshi/php-coveralls": "~0.6",
+            "squizlabs/php_codesniffer": "1.4.*"
+        },
+        "time": "2014-03-20 20:55:49",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "ZfcUserLdap": "src/"
+            },
+            "classmap": [
+                "Module.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "New BSD License"
+        ],
+        "authors": [
+            {
+                "name": "Will Hattingh",
+                "email": "w.hattingh@nitecon.com",
+                "homepage": "http://www.nitecon.com/",
+                "role": "Master"
+            }
+        ],
+        "description": "Zend Framework 2 ZfcUser LDAP Authentication",
+        "homepage": "https://github.com/Nitecon/zfcuser-ldap.git",
+        "keywords": [
+            "ldap",
+            "zf2",
+            "zfcuser"
         ]
     }
 ]

@@ -2,6 +2,18 @@
 // remove this line in local
 
 //if (!empty(getenv('OPENSHIFT_GEAR_NAME')))
+
+/* Add this part in local server
+
+
+        SetEnv DB_NAME "<DBNAME>"
+        SetEnv DB_USER "<USER>"
+        SetEnv DB_PASS "<PASS>"
+        SetEnv DB_HOST "<HOST>"
+        SetEnv DB_PORT "<PORT>"
+
+*/
+
 $gear_name=getenv('OPENSHIFT_GEAR_NAME');
 if (!empty($gear_name))
 {

@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'ZfcBase\\Module' => $vendorDir . '/zf-commons/zfc-base/Module.php',
+    'ZfcUserLdap\\Module' => $vendorDir . '/nitecon/zfcuser-ldap/Module.php',
     'ZfcUser\\Module' => $vendorDir . '/zf-commons/zfc-user/Module.php',
 );

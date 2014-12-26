@@ -95,7 +95,7 @@ return array(
         'invokables' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
             'Application\Controller\Env' => 'Application\Controller\EnvController',
-            'Application\Controller\Target' => 'Application\Controller\TargetController'
+            'Application\Controller\Target' => 'Application\Controller\TargetController',
         ),
     ),
     'view_manager' => array(

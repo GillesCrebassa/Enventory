@@ -2,9 +2,11 @@
 
 namespace ZfcUser\Form;
 
+use Zend\Form\Form;
 use Zend\Form\Element;
 use ZfcBase\Form\ProvidesEventsForm;
 use ZfcUser\Options\AuthenticationOptionsInterface;
+use ZfcUser\Module as ZfcUser;
 
 class Login extends ProvidesEventsForm
 {

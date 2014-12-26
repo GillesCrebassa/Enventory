@@ -11,6 +11,7 @@ namespace Zend\Ldap;
 
 use Traversable;
 use Zend\Stdlib\ErrorHandler;
+//use Exception;
 
 class Ldap
 {
@@ -904,9 +905,10 @@ class Ldap
         if ($filter instanceof Filter\AbstractFilter) {
             $filter = $filter->toString();
         }
-
+print "search1";
         $resource = $this->getResource();
         ErrorHandler::start(E_WARNING);
+print "search2";
         switch ($scope) {
             case self::SEARCH_SCOPE_ONE:
                 $search = ldap_list($resource, $basedn, $filter, $attributes, 0, $sizelimit, $timelimit);
@@ -949,7 +951,10 @@ class Ldap
     protected function createCollection(Collection\DefaultIterator $iterator, $collectionClass)
     {
         if ($collectionClass === null) {
-            return new Collection($iterator);
+            $collectionIter = new Collection($iterator);
+var_dump($collectionIter);
+            return $collectionIter;
+//            return new Collection($iterator);
         } else {
             $collectionClass = (string) $collectionClass;
             if (!class_exists($collectionClass)) {
@@ -1076,13 +1081,12 @@ class Ldap
                 "(objectClass=*)", $dn, self::SEARCH_SCOPE_BASE,
                 $attributes, null
             );
-
             return $result->getFirst();
         } catch (Exception\LdapException $e) {
             if ($throwOnNotFound !== false) {
                 throw $e;
             }
-        }
+	}
 
         return null;
     }

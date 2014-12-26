@@ -5,8 +5,7 @@ return array(
         'Application',
         'ZfcBase',
         'ZfcUser',
-	'Zf2LdapAuth',
-	'ZfSnapPhpDebugBar'
+	'ZfcUserLdap'
     ),
 
     // These are various options for the listeners attached to the ModuleManager
