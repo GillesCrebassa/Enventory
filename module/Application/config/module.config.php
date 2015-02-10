@@ -121,4 +121,9 @@ return array(
             ),
         ),
     ),
+    'asset_bundle' => array(
+        'assets' => array(
+            'less' => array(__DIR__ . '/../../../vendor/twbs/bootstrap/less/bootstrap.less')
+        )
+    ),    
 );

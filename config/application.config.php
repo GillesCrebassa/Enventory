@@ -5,7 +5,7 @@ return array(
         'Application',
         'ZfcBase',
         'ZfcUser',
-        'DluTwBootstrap',
+        'TwbBundle',
         'Auth'
     ),
 

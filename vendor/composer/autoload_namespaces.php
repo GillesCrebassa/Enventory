@@ -10,5 +10,5 @@ return array(
     'ZfcBase' => array($vendorDir . '/zf-commons/zfc-base/src'),
     'Zend\\' => array($vendorDir . '/zendframework/zendframework/library'),
     'ZendXml' => array($vendorDir . '/zendframework/zendxml/library'),
-    'DluTwBootstrap' => array($vendorDir . '/dlu/dlutwbootstrap/src'),
+    'TwbBundle' => array($vendorDir . '/neilime/zf2-twb-bundle/src'),
 );

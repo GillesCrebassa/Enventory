@@ -181,22 +181,75 @@
         ]
     },
     {
-        "name": "zendframework/zendframework",
-        "version": "2.2.9",
-        "version_normalized": "2.2.9.0",
+        "name": "twbs/bootstrap",
+        "version": "v3.3.2",
+        "version_normalized": "3.3.2.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/zendframework/zf2.git",
-            "reference": "351279d669cf16eb5c640f86e944fe8f84c8b181"
+            "url": "https://github.com/twbs/bootstrap.git",
+            "reference": "bcf7dd38b5ab180256e2e4fb5da0369551b3f082"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/zendframework/zf2/zipball/351279d669cf16eb5c640f86e944fe8f84c8b181",
-            "reference": "351279d669cf16eb5c640f86e944fe8f84c8b181",
+            "url": "https://api.github.com/repos/twbs/bootstrap/zipball/bcf7dd38b5ab180256e2e4fb5da0369551b3f082",
+            "reference": "bcf7dd38b5ab180256e2e4fb5da0369551b3f082",
+            "shasum": ""
+        },
+        "replace": {
+            "twitter/bootstrap": "self.version"
+        },
+        "time": "2015-01-19 17:03:09",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jacob Thornton",
+                "email": "jacobthornton@gmail.com"
+            },
+            {
+                "name": "Mark Otto",
+                "email": "markdotto@gmail.com"
+            }
+        ],
+        "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+        "homepage": "http://getbootstrap.com",
+        "keywords": [
+            "JS",
+            "css",
+            "framework",
+            "front-end",
+            "less",
+            "mobile-first",
+            "responsive",
+            "web"
+        ]
+    },
+    {
+        "name": "zendframework/zendframework",
+        "version": "2.3.4",
+        "version_normalized": "2.3.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zf2.git",
+            "reference": "c878e047ab1c5dcfb201974bdff607be54ccb54b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zf2/zipball/c878e047ab1c5dcfb201974bdff607be54ccb54b",
+            "reference": "c878e047ab1c5dcfb201974bdff607be54ccb54b",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.3",
+            "php": ">=5.3.23",
             "zendframework/zendxml": "~1.0-dev"
         },
         "replace": {
@@ -254,21 +307,23 @@
         },
         "require-dev": {
             "doctrine/annotations": ">=1.0",
-            "fabpot/php-cs-fixer": "*@dev",
+            "fabpot/php-cs-fixer": "1.*",
             "ircmaxell/random-lib": "dev-master",
             "ircmaxell/security-lib": "dev-master",
-            "ocramius/proxy-manager": "0.4.*",
-            "phpunit/phpunit": "3.7.*"
+            "mikey179/vfsstream": "1.2.*",
+            "phpunit/phpunit": "3.7.*",
+            "satooshi/php-coveralls": "dev-master",
+            "sebastianbergmann/phpcov": "1.1.0"
         },
         "suggest": {
             "doctrine/annotations": "Doctrine Annotations >=1.0 for annotation features",
             "ext-intl": "ext/intl for i18n features (included in default builds of PHP)",
             "ircmaxell/random-lib": "Fallback random byte generator for Zend\\Math\\Rand if OpenSSL/Mcrypt extensions are unavailable",
-            "ocramius/proxy-manager": "ProxyManager to handle lazy initialization of services",
+            "ocramius/proxy-manager": "ProxyManager 0.5.* to handle lazy initialization of services",
             "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
             "zendframework/zendservice-recaptcha": "ZendService\\ReCaptcha for rendering ReCaptchas in Zend\\Captcha and/or Zend\\Form"
         },
-        "time": "2015-01-14 16:28:50",
+        "time": "2015-01-14 16:44:17",
         "bin": [
             "bin/classmap_generator.php",
             "bin/pluginmap_generator.php",
@@ -277,8 +332,8 @@
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "2.2-dev",
-                "dev-develop": "2.3-dev"
+                "dev-master": "2.3-dev",
+                "dev-develop": "2.4-dev"
             }
         },
         "installation-source": "dist",
@@ -299,53 +354,76 @@
         ]
     },
     {
-        "name": "dlu/dlutwbootstrap",
+        "name": "neilime/zf2-twb-bundle",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://bitbucket.org/dlu/dlutwbootstrap.git",
-            "reference": "843d123dbb8e2eba65d4ef58f7cdaf7f59b0d51d"
+            "url": "https://github.com/neilime/zf2-twb-bundle.git",
+            "reference": "528120660b33ed64103c324014981feee194f6ca"
         },
         "dist": {
             "type": "zip",
-            "url": "https://bitbucket.org/dlu/dlutwbootstrap/get/843d123dbb8e2eba65d4ef58f7cdaf7f59b0d51d.zip",
-            "reference": "843d123dbb8e2eba65d4ef58f7cdaf7f59b0d51d",
+            "url": "https://api.github.com/repos/neilime/zf2-twb-bundle/zipball/528120660b33ed64103c324014981feee194f6ca",
+            "reference": "528120660b33ed64103c324014981feee194f6ca",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.3",
-            "zendframework/zendframework": ">=2.1.0"
+            "php": ">=5.3.2",
+            "zendframework/zend-config": "2.3.*",
+            "zendframework/zend-escaper": "2.3.*",
+            "zendframework/zend-form": "2.3.*",
+            "zendframework/zend-i18n": "2.3.*",
+            "zendframework/zend-loader": "2.3.*",
+            "zendframework/zend-log": "2.3.*",
+            "zendframework/zend-modulemanager": "2.3.*",
+            "zendframework/zend-mvc": "2.3.*",
+            "zendframework/zend-serializer": "2.3.*",
+            "zendframework/zend-servicemanager": "2.3.*",
+            "zendframework/zend-stdlib": "2.3.*",
+            "zendframework/zend-view": "2.3.*"
         },
-        "time": "2013-03-27 13:05:57",
+        "require-dev": {
+            "phpunit/phpunit": "4.*",
+            "satooshi/php-coveralls": "0.*"
+        },
+        "suggest": {
+            "neilime/zf2-assets-bundle": "Bundling & caching Twitter Bootstrap assets",
+            "twitter/bootstrap": "Twitter bootstrap assets"
+        },
+        "time": "2015-01-23 22:49:26",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
         "installation-source": "source",
         "autoload": {
             "psr-0": {
-                "DluTwBootstrap": "src/"
+                "TwbBundle": "src"
             },
             "classmap": [
-                "./Module.php"
+                "Module.php"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
-            "New-BSD-License"
+            "MIT"
         ],
         "authors": [
             {
-                "name": "David Lukas",
-                "homepage": "http://www.zfdaily.com"
+                "name": "Neilime",
+                "homepage": "https://github.com/neilime",
+                "role": "Developer"
             }
         ],
-        "description": "ZF2 module to generate Twitter Bootstrap UI - forms, navigation, etc.",
-        "homepage": "https://bitbucket.org/dlu/dlutwbootstrap",
+        "description": "Zend Framework 2 module for easy integration of Twitter Bootstrap",
+        "homepage": "http://neilime.github.io/zf2-twb-bundle/",
         "keywords": [
-            "dlutwbootstrap",
             "module",
             "twitter bootstrap",
-            "zend framework 2",
-            "zf2"
+            "zend framework 2"
         ]
     }
 ]
