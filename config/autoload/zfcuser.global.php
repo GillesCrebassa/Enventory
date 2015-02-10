@@ -30,7 +30,7 @@ $settings = array(
      *
      * Accepted values: boolean true or false
      */
-    'enable_registration' => false,
+    'enable_registration' => true,
 
     /**
      * Enable Username
@@ -50,7 +50,7 @@ $settings = array(
      * Default value: array containing 'ZfcUser\Authentication\Adapter\Db' with priority 100
      * Accepted values: array containing services that implement 'ZfcUser\Authentication\Adapter\ChainableAdapter'
      */
-    'auth_adapters' => array( 110 => 'ZfcUserLdap\Authentication\Adapter\LdapAuth', 100 => 'ZfcUser\Authentication\Adapter\Db' ),
+    'auth_adapters' => array(  100 => 'ZfcUser\Authentication\Adapter\Db' ),
 
     /**
      * Enable Display Name
@@ -109,7 +109,7 @@ $settings = array(
      * Determines if a captcha should be utilized on the user registration form.
      * Default value is false.
      */
-    //'use_registration_form_captcha' => false,
+    'use_registration_form_captcha' => false,
 
     /**
      * Form Captcha Options

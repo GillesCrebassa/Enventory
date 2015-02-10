@@ -19,6 +19,6 @@ return array(
         'max_execution_time'            => 60,
         'date.timezone'                 => 'Europe/Brussels',
 //        'mbstring.internal_encoding'    => 'UTF-8',
-        'session.save_path'		=> __DIR__.'/../../data/session',
+//        'session.save_path'		=> __DIR__.'/../../data/session',
     ),
 );

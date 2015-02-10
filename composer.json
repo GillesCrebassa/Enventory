@@ -1,21 +1,14 @@
 {
-    "name": "zendframework/skeleton-application",
-    "description": "Skeleton Application for ZF2",
-    "license": "BSD-3-Clause",
-    "keywords": [
-        "framework",
-        "zf2",
-	"Enventory",
-	"Inventory",
-	"Environment"
-
-    ],
-    "homepage": "https://github.com/GillesCrebassa/Enventory",
-    "require": {
-        "php": ">=5.3.3",
-        "zendframework/zendframework": "2.2.*",
-	"zf-commons/zfc-base": "0.1.2",
-	"zf-commons/zfc-user": "0.1.3",
-	"nitecon/zfcuser-ldap": "dev-master"
-    }
+  "name" : "Enventory",
+  "description" : "Skeleton Application for ZF2",
+  "require" : {
+    "php" : ">=5.3.3",
+    "zendframework/zendframework" : "2.2.*",
+    "zf-commons/zfc-base" : "0.1.2",
+    "zf-commons/zfc-user" : "0.1.3",
+    "dlu/dlutwbootstrap" : "dev-master"
+  },
+  "license" : "BSD-3-Clause",
+  "keywords" : [ "framework", "zf2", "Enventory", "Inventory", "Environment" ],
+  "homepage" : "https://github.com/GillesCrebassa/Enventory"
 }

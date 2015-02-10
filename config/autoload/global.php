@@ -17,8 +17,7 @@ return array(
             'Navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory',
         ),
     ),
-    'auth_adapters' => array( 
-       110 => 'ZfcUserLdap\Authentication\Adapter\LdapAuth', 
+    'auth_adapters' => array(  
        100 => 'ZfcUser\Authentication\Adapter\Db'
     ),
 );
